@@ -1,0 +1,42 @@
+@import "./helper.scss";
+
+.view {
+  @include layout;
+  @include center-vertically;
+  @include center-horizantally;
+   @media screen and (max-width: 280px) {
+    width: 100vw;
+  }
+  section {
+    height:80vh;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 280px) {
+      height: 90vh;
+    }
+    div {
+      @include container;
+      width: 358px;
+      height: 290px;
+      padding: 10px;
+      span {
+        color: #00cc00;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+      }
+      h3 {
+        @include title;
+        font-size: 20px;
+        text-align: center;
+      }
+      p {
+        @include text;
+      }
+      button {
+        border: 0;
+        font-weight: 700;
+      }
+    }
+  }
+}

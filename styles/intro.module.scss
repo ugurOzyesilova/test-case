@@ -1,0 +1,21 @@
+@import "./helper.scss";
+
+.intro {
+    @include center-vertically;
+    @include layout;
+    justify-content: space-between;
+    height:90vh;
+    header {
+        text-align: center;
+        font-weight: 700;
+        h1 {
+            @include title;
+        }
+        span {
+            font-weight: 900;
+        }
+        :nth-child(2){
+            @include text;
+        }
+    }  
+}

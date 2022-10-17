@@ -1,0 +1,24 @@
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffcc33;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}

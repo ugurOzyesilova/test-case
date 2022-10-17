@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
+
+
+
+
+@mixin center-vertically {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin center-horizantally {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39.01px;
+}
+
+@mixin text {
+  font-family: "Quicksand", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+@mixin layout {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 390px;
+  @media screen and (max-width: 280px) {
+    height:100vh;
+    width:100%
+  }
+  
+}
+
+@mixin button {
+  font-family: "Quicksand", sans-serif;
+  background: #000000;
+  border-radius: 99px;
+  padding: 7px 16px;
+  color: #ffffff;
+  width: 326px;
+  height: 56px;
+  font-weight: 700;
+  @media screen and (max-width: 280px) {
+    width:90px;
+    height:50px;
+  }
+}
+
+@mixin container {
+  @include center-vertically;
+  justify-content: space-around;
+  background: #ffffff;
+  width: 358px;
+  height: 204px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.15);
+  padding: 0 32px 0 32px;
+  font-family: "Quicksand", sans-serif;
+  @media screen and (max-width: 280px) {
+    width:250px;
+  }
+  h2 {
+    @include title;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+    @media screen and (max-width: 280px) {
+    width:100%;
+    text-align: center;
+  }
+  }
+  p {
+    @include text;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+  }
+  button {
+    @include button;
+  }
+  
+}

@@ -1,0 +1,31 @@
+@import "../helper.scss";
+
+.nav {
+  background-color: #ffcc33;
+  height: 10vh;
+  @include center-horizantally;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+
+  h2 {
+    @include title;
+    font-size: 20px;
+    span {
+      font-weight: 900;
+    }
+  }
+  button {
+    @include button;
+    width: 123px;
+    border: 0;
+    height: 36px;
+    font-size: 14px;
+    font-weight: 100;
+    padding: 8px 16px;
+    span {
+      font-weight: 700;
+    }
+  }
+}

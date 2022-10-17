@@ -1,0 +1,28 @@
+.actions {
+  background: #F5F5F5;
+  height: 90vh;
+  padding: 10px;
+  margin: 0 auto;
+  overflow-y: scroll;
+  h2 {
+    font-family: "Quicksand";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  >div {
+    background: #ffff;
+    height: 5vh;
+    display: flex;
+    margin-top:10px;
+    border-radius:10px;
+    padding: 5px;
+    input {
+      padding: 10px;
+      width: 90%;
+      border: 0;
+    }
+    
+
+  }
+}
